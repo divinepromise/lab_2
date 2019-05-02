@@ -7,7 +7,7 @@ def rotate_letter(letter,n):
 		start = ord(letter)
 
 
-	new_shift = start + n
+	new_shift = ord(letter) + n
 	first = new_shift - start
 	second = first % 26
 	third = second + start
@@ -15,7 +15,14 @@ def rotate_letter(letter,n):
 
 	return new_letter
 
+def word_shift(word,n):
+	holder = ""
+	for letter in word:
+		letter = rotate_letter(letter,n)
+		holder = holder + letter
+	return holder
 
-result = rotate_letter("a",9)
+
+result = word_shift("cheer",7)
 print(result)
 
