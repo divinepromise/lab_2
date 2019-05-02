@@ -1,11 +1,9 @@
 def has_no_e(word):
-	index=1
-	while index < len(word):
-		if word[index] != "e":
-			return True
-		else:
+	for letter in word:
+		if letter == "e":
 			return False
+	return True
 
-
-result = has_no_e("bsnana")
+result = has_no_e("bnebabab")
 print(result)
+
