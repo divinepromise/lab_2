@@ -1,5 +1,3 @@
-import math
-
 def square_root(a):
 	x=a/2
 	epsilon=0.0000001
