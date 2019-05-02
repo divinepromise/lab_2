@@ -3,7 +3,8 @@ def word_play1():
 
 	for line in word:
 		line = line.strip()
-		print(line)
+		if len(line) > 20:
+			print(line)
 
 
 word_play1()
